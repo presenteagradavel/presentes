@@ -25,7 +25,6 @@
       padding: 0 24px;
     }
 
-    /* Header */
     .site-header {
       background-color: #ffffff;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
@@ -68,7 +67,6 @@
       color: #d44e5c;
     }
 
-    /* Hero Section */
     .hero {
       background: linear-gradient(145deg, #f0f4fa 0%, #ffffff 100%);
       padding: 80px 0;
@@ -90,7 +88,6 @@
       margin: 0 auto;
     }
 
-    /* Secções de Categorias */
     .category-section {
       margin-bottom: 80px;
       scroll-margin-top: 100px;
@@ -106,13 +103,19 @@
       display: inline-block;
     }
 
+    .category-title span {
+      font-size: 20px;
+      font-weight: 400;
+      color: #6f6f8a;
+      margin-left: 10px;
+    }
+
     .category-description {
       color: #6f6f8a;
       margin-bottom: 40px;
       font-size: 18px;
     }
 
-    /* Grelha de Produtos */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -166,11 +169,12 @@
       flex-grow: 1;
     }
 
-    .product-price {
-      font-size: 24px;
-      font-weight: 700;
-      color: #d44e5c;
-      margin-bottom: 20px;
+    .product-description .english {
+      display: block;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed #eaeef2;
+      color: #8f8fa8;
     }
 
     .product-link {
@@ -193,7 +197,6 @@
       background-color: #d44e5c;
     }
 
-    /* Footer */
     .site-footer {
       background-color: #1e1e2f;
       color: #b0b0c5;
@@ -202,7 +205,6 @@
       margin-top: 60px;
     }
 
-    /* Responsividade */
     @media (max-width: 640px) {
       .header-content {
         flex-direction: column;
@@ -244,311 +246,326 @@
   </section>
 
   <main class="container">
-
-    <!-- NAMORADA -->
+    <!-- NAMORADA / GIRLFRIEND -->
     <section id="namorada" class="category-section">
-      <h2 class="category-title">Para Namorada 💖</h2>
-      <p class="category-description">Presentes românticos e acessíveis.</p>
+      <h2 class="category-title">Namorada <span>Girlfriend</span></h2>
+      <p class="category-description">Presentes românticos e acessíveis / Romantic and affordable gifts</p>
       <div class="products-grid">
-        <!-- 1. Elli -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81hHkMheJtL._AC_SY575_.jpg" alt="Colar Elli Prata 925" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Elli 925 Sterling Silver Pendant</h3>
-            <p class="product-description">Um colar delicado em prata 925, perfeito para oferecer algo bonito sem gastar muito. Ideal para um presente romântico e acessível.</p>
-            <div class="product-price">28,20 €</div>
-            <a href="https://amzn.to/47umXnr" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um colar delicado em prata 925, perfeito para oferecer algo bonito sem gastar muito. Ideal para um presente romântico e acessível.
+              <span class="english">A delicate 925 silver necklace, perfect for giving something beautiful without spending much. Ideal for a romantic and affordable gift.</span>
+            </div>
+            <a href="https://amzn.to/47umXnr" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 2. Swarovski -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81UZP6w8GvL._AC_SX679_.jpg" alt="Colar Swarovski" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Swarovski Creativity Necklace</h3>
-            <p class="product-description">Um clássico Swarovski com brilho elegante, perfeito para surpreender com algo especial sem entrar no luxo extremo.</p>
-            <div class="product-price">59,00 €</div>
-            <a href="https://amzn.to/4b5aMyt" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um clássico Swarovski com brilho elegante, perfeito para surpreender com algo especial sem entrar no luxo extremo.
+              <span class="english">A classic Swarovski with elegant shine, perfect for surprising with something special without going into extreme luxury.</span>
+            </div>
+            <a href="https://amzn.to/4b5aMyt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 3. Lavumo -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71hR2bqh4fL._AC_SX679_.jpg" alt="Colar Coração Prata" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Lavumo Love Heart 925 Silver</h3>
-            <p class="product-description">Um colar em forma de coração com acabamento premium, perfeito para marcar datas especiais e criar impacto emocional.</p>
-            <div class="product-price">71,14 €</div>
-            <a href="https://amzn.to/4rPC3fz" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um colar em forma de coração com acabamento premium, perfeito para marcar datas especiais e criar impacto emocional.
+              <span class="english">A heart-shaped necklace with premium finish, perfect for marking special dates and creating emotional impact.</span>
+            </div>
+            <a href="https://amzn.to/4rPC3fz" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- NAMORADO -->
+    <!-- NAMORADO / BOYFRIEND -->
     <section id="namorado" class="category-section">
-      <h2 class="category-title">Para Namorado 💙</h2>
-      <p class="category-description">Tecnologia e estilo para ele.</p>
+      <h2 class="category-title">Namorado <span>Boyfriend</span></h2>
+      <p class="category-description">Tecnologia e estilo para ele / Technology and style for him</p>
       <div class="products-grid">
-        <!-- 4. Amazfit -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/61wJFwhRaYL._AC_SL1500_.jpg" alt="Amazfit Bip 6" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Amazfit Bip 6</h3>
-            <p class="product-description">Um smartwatch completo e económico, ideal para quem quer oferecer tecnologia útil sem gastar muito.</p>
-            <div class="product-price">69,11 €</div>
-            <a href="https://amzn.to/4rkJ7Q5" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um smartwatch completo e económico, ideal para quem quer oferecer tecnologia útil sem gastar muito.
+              <span class="english">A complete and affordable smartwatch, ideal for giving useful tech without spending much.</span>
+            </div>
+            <a href="https://amzn.to/4rkJ7Q5" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 5. Huawei -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71fZcCnF-6L._AC_SL1500_.jpg" alt="Huawei Watch Fit 3" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Huawei Watch Fit 3</h3>
-            <p class="product-description">Design moderno, funcionalidades completas e excelente relação qualidade-preço. Um presente certeiro.</p>
-            <div class="product-price">80,31 €</div>
-            <a href="https://amzn.to/475BZ39" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Design moderno, funcionalidades completas e excelente relação qualidade-preço. Um presente certeiro.
+              <span class="english">Modern design, complete features, and excellent value for money. A spot-on gift.</span>
+            </div>
+            <a href="https://amzn.to/475BZ39" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 6. Xiaomi -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71g+xub4l+L._AC_SL1500_.jpg" alt="Xiaomi Watch S4" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Xiaomi Watch S4</h3>
-            <p class="product-description">Um smartwatch elegante e avançado, ideal para quem quer oferecer algo premium e marcante.</p>
-            <div class="product-price">135,80 €</div>
-            <a href="https://amzn.to/4s7qksI" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um smartwatch elegante e avançado, ideal para quem quer oferecer algo premium e marcante.
+              <span class="english">An elegant and advanced smartwatch, ideal for giving something premium and memorable.</span>
+            </div>
+            <a href="https://amzn.to/4s7qksI" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- AMIGOS -->
+    <!-- AMIGOS / FRIENDS -->
     <section id="amigos" class="category-section">
-      <h2 class="category-title">Para Amigos 🎈</h2>
-      <p class="category-description">Ideias divertidas e originais.</p>
+      <h2 class="category-title">Amigos <span>Friends</span></h2>
+      <p class="category-description">Ideias divertidas e originais / Fun and original ideas</p>
       <div class="products-grid">
-        <!-- 7. Moon Lamp -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81ESewTDlZL._AC_SL1500_.jpg" alt="Moon Lamp" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Logrotate Moon Lamp</h3>
-            <p class="product-description">Uma luz decorativa perfeita para criar ambiente. Ideal para amigos que adoram decoração moderna.</p>
-            <div class="product-price">33,28 €</div>
-            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Uma luz decorativa perfeita para criar ambiente. Ideal para amigos que adoram decoração moderna.
+              <span class="english">A decorative light perfect for setting the mood. Ideal for friends who love modern decor.</span>
+            </div>
+            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 8. Mini Printer -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71JF02e82VL._AC_SL1500_.jpg" alt="Mini Impressora" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Peripage Mini Printer</h3>
-            <p class="product-description">Impressora portátil ideal para fotos, notas e stickers. Um presente divertido e útil para qualquer amigo.</p>
-            <div class="product-price">39,63 €</div>
-            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Impressora portátil ideal para fotos, notas e stickers. Um presente divertido e útil.
+              <span class="english">Portable printer ideal for photos, notes, and stickers. A fun and useful gift.</span>
+            </div>
+            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 9. Mini Projector -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71RnXYwpLNL._AC_SL1500_.jpg" alt="Mini Projetor" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Mini Projector 4K H1</h3>
-            <p class="product-description">Um projetor portátil perfeito para filmes, jogos e noites de convívio. Um presente criativo e útil.</p>
-            <div class="product-price">67,71 €</div>
-            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um projetor portátil perfeito para filmes, jogos e noites de convívio. Um presente criativo e útil.
+              <span class="english">A portable projector perfect for movies, games, and social nights. A creative and useful gift.</span>
+            </div>
+            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- MÃE -->
+    <!-- MÃE / MOTHER -->
     <section id="mae" class="category-section">
-      <h2 class="category-title">Para Mãe 🌸</h2>
-      <p class="category-description">Carinho e conforto para o dia a dia.</p>
+      <h2 class="category-title">Mãe <span>Mother</span></h2>
+      <p class="category-description">Carinho e conforto / Affection and comfort</p>
       <div class="products-grid">
-        <!-- 10. Frameo -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71mngkYSqSL._AC_SL1500_.jpg" alt="Moldura Digital" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Frameo 10.1"</h3>
-            <p class="product-description">Uma moldura digital simples e bonita, perfeita para partilhar memórias com a família.</p>
-            <div class="product-price">60,97 €</div>
-            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Uma moldura digital simples e bonita, perfeita para partilhar memórias com a família.
+              <span class="english">A simple and beautiful digital frame, perfect for sharing memories with family.</span>
+            </div>
+            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 11. Diffuser -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81Xu+TvJIoL._AC_SL1500_.jpg" alt="Difusor Aromaterapia" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Aromatherapy Essential Oil Diffuser</h3>
-            <p class="product-description">Um difusor de óleos essenciais calmante, perfeito para criar um ambiente relaxante e acolhedor em casa.</p>
-            <div class="product-price">29,99 €</div>
-            <a href="https://amzn.to/4s3LzM1" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um difusor de óleos essenciais calmante, perfeito para criar um ambiente relaxante e acolhedor.
+              <span class="english">A calming essential oil diffuser, perfect for creating a relaxing and welcoming environment.</span>
+            </div>
+            <a href="https://amzn.to/4s3LzM1" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 12. Mini Printer -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71JF02e82VL._AC_SL1500_.jpg" alt="Mini Impressora" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Peripage Mini Printer</h3>
-            <p class="product-description">Uma impressora portátil perfeita para imprimir fotos dos filhos, netos e momentos especiais.</p>
-            <div class="product-price">39,63 €</div>
-            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Para imprimir fotos dos filhos, netos e momentos especiais. Um presente cheio de significado.
+              <span class="english">For printing photos of children, grandchildren, and special moments. A gift full of meaning.</span>
+            </div>
+            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- PAI -->
+    <!-- PAI / FATHER -->
     <section id="pai" class="category-section">
-      <h2 class="category-title">Para Pai 🛠️</h2>
-      <p class="category-description">Utilidade e praticidade.</p>
+      <h2 class="category-title">Pai <span>Father</span></h2>
+      <p class="category-description">Utilidade e praticidade / Utility and practicality</p>
       <div class="products-grid">
-        <!-- 13. Multi-Tool -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71PN0mfsuIL._AC_SL1500_.jpg" alt="Multi-ferramenta" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Bibury Multi-Tool</h3>
-            <p class="product-description">Ferramenta compacta e prática, ideal para pais que adoram bricolage e utilidade no dia a dia.</p>
-            <div class="product-price">28,97 €</div>
-            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Ferramenta compacta e prática, ideal para bricolage e utilidade no dia a dia.
+              <span class="english">Compact and practical tool, ideal for DIY and everyday utility.</span>
+            </div>
+            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 14. Car Jack -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71iUzcCmuCL._AC_SL1500_.jpg" alt="Macaco Elétrico" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Electric Car Jack 3T</h3>
-            <p class="product-description">Um macaco elétrico essencial para qualquer condutor. Prático, seguro e muito útil.</p>
-            <div class="product-price">74,99 €</div>
-            <a href="https://amzn.to/4d1WQrG" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um macaco elétrico essencial para qualquer condutor. Prático, seguro e muito útil.
+              <span class="english">An essential electric jack for any driver. Practical, safe, and very useful.</span>
+            </div>
+            <a href="https://amzn.to/4d1WQrG" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 15. Mini Projector -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71RnXYwpLNL._AC_SL1500_.jpg" alt="Mini Projetor" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Mini Projector 4K H1</h3>
-            <p class="product-description">Perfeito para ver jogos, filmes e criar momentos de convívio em família.</p>
-            <div class="product-price">67,71 €</div>
-            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Perfeito para ver jogos e filmes, criando momentos de convívio em família.
+              <span class="english">Perfect for watching games and movies, creating family moments.</span>
+            </div>
+            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- SOGROS -->
+    <!-- SOGROS / IN-LAWS -->
     <section id="sogros" class="category-section">
-      <h2 class="category-title">Para Sogros 🤝</h2>
-      <p class="category-description">Presentes atenciosos e com bom gosto.</p>
+      <h2 class="category-title">Sogros <span>In-Laws</span></h2>
+      <p class="category-description">Presentes atenciosos / Thoughtful gifts</p>
       <div class="products-grid">
-        <!-- 16. Frameo -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81mlYfA5fpL._AC_SL1500_.jpg" alt="Moldura Digital" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Frameo 10.1"</h3>
-            <p class="product-description">Uma forma moderna e simples de partilhar fotos com a família.</p>
-            <div class="product-price">60,97 €</div>
-            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Uma forma moderna e simples de partilhar fotos com a família.
+              <span class="english">A modern and simple way to share photos with family.</span>
+            </div>
+            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 17. Moon Lamp -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81ESewTDlZL._AC_SL1500_.jpg" alt="Moon Lamp" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Logrotate Moon Lamp</h3>
-            <p class="product-description">Uma luz decorativa elegante que cria ambiente acolhedor em qualquer divisão.</p>
-            <div class="product-price">33,28 €</div>
-            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Uma luz decorativa elegante que cria ambiente acolhedor em qualquer divisão.
+              <span class="english">An elegant decorative light that creates a cozy atmosphere in any room.</span>
+            </div>
+            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 18. Multi-Tool -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71PN0mfsuIL._AC_SL1500_.jpg" alt="Multi-ferramenta" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Bibury Multi-Tool</h3>
-            <p class="product-description">Ferramenta útil e versátil, perfeita para pequenos arranjos e uso diário.</p>
-            <div class="product-price">28,97 €</div>
-            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Ferramenta útil e versátil para pequenos arranjos e uso diário.
+              <span class="english">Useful and versatile tool for small fixes and daily use.</span>
+            </div>
+            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- MARIDO -->
+    <!-- MARIDO / HUSBAND -->
     <section id="marido" class="category-section">
-      <h2 class="category-title">Para Marido 💍</h2>
-      <p class="category-description">Tecnologia e estilo.</p>
+      <h2 class="category-title">Marido <span>Husband</span></h2>
+      <p class="category-description">Tecnologia e estilo / Technology and style</p>
       <div class="products-grid">
-        <!-- 19. Relógio -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81wcSIxuA8L._AC_SL1500_.jpg" alt="Relógio Smartwatch" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Relógio Minimalista em Aço</h3>
-            <p class="product-description">Um smartwatch elegante e avançado, ideal para quem quer oferecer algo premium e marcante.</p>
-            <div class="product-price">49,99 €</div>
-            <a href="https://amzn.to/3Nbilff" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um smartwatch elegante e avançado, ideal para oferecer algo premium e marcante.
+              <span class="english">An elegant and advanced smartwatch, ideal for giving something premium and memorable.</span>
+            </div>
+            <a href="https://amzn.to/3Nbilff" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 20. Headphones -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71L-FrysfqL._AC_SY300_SX300_QL70_ML2_.jpg" alt="Headphones" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Auscultadores Bluetooth Over-Ear</h3>
-            <p class="product-description">Confortáveis, com bom som e perfeitos para música, chamadas ou treinar. Um presente útil que ele vai usar todos os dias.</p>
-            <div class="product-price">39,99 €</div>
-            <a href="https://amzn.to/3xK2p5C" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Confortáveis, com bom som e perfeitos para música, chamadas ou treinar. Um presente útil.
+              <span class="english">Comfortable, with great sound, perfect for music, calls, or workouts. A useful gift.</span>
+            </div>
+            <a href="https://amzn.to/3xK2p5C" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 21. Kit Barba -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81meii4s+GL._AC_SL1500_.jpg" alt="Kit de Barba" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Kit de Barba Premium</h3>
-            <p class="product-description">Conjunto completo para cuidar da barba com estilo. Ideal para homens que gostam de manter um visual limpo e bem tratado.</p>
-            <div class="product-price">18,99 €</div>
-            <a href="https://amzn.to/40xAbvY" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Conjunto completo para cuidar da barba com estilo. Para um visual sempre limpo e bem tratado.
+              <span class="english">Complete kit for stylish beard care. For a always clean and well-groomed look.</span>
+            </div>
+            <a href="https://amzn.to/40xAbvY" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- ESPOSA -->
+    <!-- ESPOSA / WIFE -->
     <section id="esposa" class="category-section">
-      <h2 class="category-title">Para Esposa 💕</h2>
-      <p class="category-description">Romance, mimo e utilidade.</p>
+      <h2 class="category-title">Esposa <span>Wife</span></h2>
+      <p class="category-description">Romance, mimo e utilidade / Romance, pampering and utility</p>
       <div class="products-grid">
-        <!-- 22. Colar -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/71SNCgLdvpL._AC_SY500_.jpg" alt="Colar Coração" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Colar Minimalista com Coração</h3>
-            <p class="product-description">Um colar delicado e elegante, perfeito para oferecer algo bonito e simbólico sem gastar muito.</p>
-            <div class="product-price">31,07 €</div>
-            <a href="https://amzn.to/4bf7yIN" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Um colar delicado e elegante, perfeito para oferecer algo bonito e simbólico.
+              <span class="english">A delicate and elegant necklace, perfect for giving something beautiful and symbolic.</span>
+            </div>
+            <a href="https://amzn.to/4bf7yIN" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 23. Spa Kit -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/61NNGzXTh3L._SL1000_.jpg" alt="Kit de Spa" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Kit de Spa com Velas e Aromas</h3>
-            <p class="product-description">Conjunto de velas e aromas para transformar qualquer noite num momento de relaxamento total.</p>
-            <div class="product-price">34,53 €</div>
-            <a href="https://amzn.to/3Nabbb9" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Conjunto para transformar qualquer noite num momento de relaxamento total.
+              <span class="english">Set to transform any night into a moment of total relaxation.</span>
+            </div>
+            <a href="https://amzn.to/3Nabbb9" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
-        <!-- 24. Mala -->
         <div class="product-card">
           <img src="https://m.media-amazon.com/images/I/81BzznWK58L._AC_SY500_.jpg" alt="Mala Feminina" class="product-image">
           <div class="product-content">
             <h3 class="product-title">Mala Feminina Casual</h3>
-            <p class="product-description">Mala moderna, leve e prática para o dia a dia. Um presente útil e com estilo.</p>
-            <div class="product-price">32,90 €</div>
-            <a href="https://amzn.to/4upyIpg" target="_blank" rel="noopener" class="product-link">Ver oferta</a>
+            <div class="product-description">
+              Mala moderna, leve e prática para o dia a dia. Um presente útil e com estilo.
+              <span class="english">Modern, lightweight, and practical bag for everyday use. A useful and stylish gift.</span>
+            </div>
+            <a href="https://amzn.to/4upyIpg" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -558,7 +575,6 @@
     </div>
   </footer>
 
-  <!-- Navegação suave -->
   <script>
     document.querySelectorAll('.nav a').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
