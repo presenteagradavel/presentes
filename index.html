@@ -1,591 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Presentes Perfeitos | Guia de Ofertas 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentes para Namorada | Gift Ideas</title>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafc;
-      color: #1e1e2f;
-      line-height: 1.5;
-    }
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#222;
+}
 
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+header{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
 
-    .site-header {
-      background-color: #ffffff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-      padding: 20px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid #eaeef2;
-    }
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
 
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-    .logo {
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #2a2a4a, #4a4a6a);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+}
 
-    .nav {
-      display: flex;
-      gap: 32px;
-    }
+.card img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:8px;
+}
 
-    .nav a {
-      text-decoration: none;
-      color: #4a4a6a;
-      font-weight: 500;
-      font-size: 16px;
-      transition: color 0.2s;
-    }
+.title{
+font-weight:bold;
+margin:10px 0 5px 0;
+}
 
-    .nav a:hover {
-      color: #d44e5c;
-    }
+.desc{
+font-size:14px;
+margin-bottom:10px;
+}
 
-    .hero {
-      background: linear-gradient(145deg, #f0f4fa 0%, #ffffff 100%);
-      padding: 80px 0;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.btn{
+margin-top:auto;
+background:#e91e63;
+color:white;
+text-align:center;
+padding:10px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+.btn:hover{
+opacity:0.85;
+}
+</style>
 
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 700;
-      color: #1e1e2f;
-      margin-bottom: 16px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #5e5e7a;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .category-section {
-      margin-bottom: 80px;
-      scroll-margin-top: 100px;
-    }
-
-    .category-title {
-      font-size: 32px;
-      font-weight: 600;
-      color: #1e1e2f;
-      margin-bottom: 8px;
-      padding-bottom: 12px;
-      border-bottom: 3px solid #d44e5c;
-      display: inline-block;
-    }
-
-    .category-title span {
-      font-size: 20px;
-      font-weight: 400;
-      color: #6f6f8a;
-      margin-left: 10px;
-    }
-
-    .category-description {
-      color: #6f6f8a;
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .product-card {
-      background: white;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
-      transition: all 0.25s ease;
-      border: 1px solid #eaeef2;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 25px 35px -10px rgba(212, 78, 92, 0.15);
-      border-color: #d44e5c30;
-    }
-
-    .product-image {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      background-color: #f4f6fa;
-      border-bottom: 1px solid #eaeef2;
-    }
-
-    .product-content {
-      padding: 24px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .product-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: #1e1e2f;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-
-    .product-description {
-      font-size: 14px;
-      color: #6f6f8a;
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-
-    .product-description .english {
-      display: block;
-      margin-top: 8px;
-      padding-top: 8px;
-      border-top: 1px dashed #eaeef2;
-      color: #8f8fa8;
-    }
-
-    .product-link {
-      background-color: #1e1e2f;
-      color: white;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 14px;
-      text-align: center;
-      transition: background-color 0.2s;
-      border: none;
-      cursor: pointer;
-      display: inline-block;
-      width: 100%;
-    }
-
-    .product-link:hover {
-      background-color: #d44e5c;
-    }
-
-    .site-footer {
-      background-color: #1e1e2f;
-      color: #b0b0c5;
-      padding: 40px 0;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 640px) {
-      .header-content {
-        flex-direction: column;
-        gap: 16px;
-      }
-      .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-      }
-      .hero h1 {
-        font-size: 36px;
-      }
-    }
-  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <div class="logo">✨ GUIA PRESENTES 2026</div>
-      <nav class="nav">
-        <a href="#namorada">Namorada</a>
-        <a href="#namorado">Namorado</a>
-        <a href="#amigos">Amigos</a>
-        <a href="#mae">Mãe</a>
-        <a href="#pai">Pai</a>
-        <a href="#sogros">Sogros</a>
-        <a href="#marido">Marido</a>
-        <a href="#esposa">Esposa</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>O presente perfeito está aqui 🎁</h1>
-      <p>Ideias para todas as pessoas e orçamentos — escolha com carinho.</p>
-    </div>
-  </section>
+<header>
+<h1>🎁 Presentes para Namorada</h1>
+<p>Romantic Gift Ideas | Ideias de Presentes Românticos</p>
+</header>
 
-  <main class="container">
-    <!-- NAMORADA / GIRLFRIEND -->
-    <section id="namorada" class="category-section">
-      <h2 class="category-title">Namorada <span>Girlfriend</span></h2>
-      <p class="category-description">Presentes românticos e acessíveis / Romantic and affordable gifts</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81hHkMheJtL._AC_SY575_.jpg" alt="Colar Elli Prata 925" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Elli 925 Sterling Silver Pendant</h3>
-            <div class="product-description">
-              Um colar delicado em prata 925, perfeito para oferecer algo bonito sem gastar muito. Ideal para um presente romântico e acessível.
-              <span class="english">A delicate 925 silver necklace, perfect for giving something beautiful without spending much. Ideal for a romantic and affordable gift.</span>
-            </div>
-            <a href="https://amzn.to/47umXnr" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81UZP6w8GvL._AC_SX679_.jpg" alt="Colar Swarovski" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Swarovski Creativity Necklace</h3>
-            <div class="product-description">
-              Um clássico Swarovski com brilho elegante, perfeito para surpreender com algo especial sem entrar no luxo extremo.
-              <span class="english">A classic Swarovski with elegant shine, perfect for surprising with something special without going into extreme luxury.</span>
-            </div>
-            <a href="https://amzn.to/4b5aMyt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71hR2bqh4fL._AC_SX679_.jpg" alt="Colar Coração Prata" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Lavumo Love Heart 925 Silver</h3>
-            <div class="product-description">
-              Um colar em forma de coração com acabamento premium, perfeito para marcar datas especiais e criar impacto emocional.
-              <span class="english">A heart-shaped necklace with premium finish, perfect for marking special dates and creating emotional impact.</span>
-            </div>
-            <a href="https://amzn.to/4rPC3fz" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- NAMORADO / BOYFRIEND -->
-    <section id="namorado" class="category-section">
-      <h2 class="category-title">Namorado <span>Boyfriend</span></h2>
-      <p class="category-description">Tecnologia e estilo para ele / Technology and style for him</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61wJFwhRaYL._AC_SL1500_.jpg" alt="Amazfit Bip 6" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Amazfit Bip 6</h3>
-            <div class="product-description">
-              Um smartwatch completo e económico, ideal para quem quer oferecer tecnologia útil sem gastar muito.
-              <span class="english">A complete and affordable smartwatch, ideal for giving useful tech without spending much.</span>
-            </div>
-            <a href="https://amzn.to/4rkJ7Q5" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71fZcCnF-6L._AC_SL1500_.jpg" alt="Huawei Watch Fit 3" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Huawei Watch Fit 3</h3>
-            <div class="product-description">
-              Design moderno, funcionalidades completas e excelente relação qualidade-preço. Um presente certeiro.
-              <span class="english">Modern design, complete features, and excellent value for money. A spot-on gift.</span>
-            </div>
-            <a href="https://amzn.to/475BZ39" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71g+xub4l+L._AC_SL1500_.jpg" alt="Xiaomi Watch S4" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Xiaomi Watch S4</h3>
-            <div class="product-description">
-              Um smartwatch elegante e avançado, ideal para quem quer oferecer algo premium e marcante.
-              <span class="english">An elegant and advanced smartwatch, ideal for giving something premium and memorable.</span>
-            </div>
-            <a href="https://amzn.to/4s7qksI" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- AMIGOS / FRIENDS -->
-    <section id="amigos" class="category-section">
-      <h2 class="category-title">Amigos <span>Friends</span></h2>
-      <p class="category-description">Ideias divertidas e originais / Fun and original ideas</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81ESewTDlZL._AC_SL1500_.jpg" alt="Moon Lamp" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Logrotate Moon Lamp</h3>
-            <div class="product-description">
-              Uma luz decorativa perfeita para criar ambiente. Ideal para amigos que adoram decoração moderna.
-              <span class="english">A decorative light perfect for setting the mood. Ideal for friends who love modern decor.</span>
-            </div>
-            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71JF02e82VL._AC_SL1500_.jpg" alt="Mini Impressora" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Peripage Mini Printer</h3>
-            <div class="product-description">
-              Impressora portátil ideal para fotos, notas e stickers. Um presente divertido e útil.
-              <span class="english">Portable printer ideal for photos, notes, and stickers. A fun and useful gift.</span>
-            </div>
-            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71RnXYwpLNL._AC_SL1500_.jpg" alt="Mini Projetor" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Mini Projector 4K H1</h3>
-            <div class="product-description">
-              Um projetor portátil perfeito para filmes, jogos e noites de convívio. Um presente criativo e útil.
-              <span class="english">A portable projector perfect for movies, games, and social nights. A creative and useful gift.</span>
-            </div>
-            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- MÃE / MOTHER -->
-    <section id="mae" class="category-section">
-      <h2 class="category-title">Mãe <span>Mother</span></h2>
-      <p class="category-description">Carinho e conforto / Affection and comfort</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71mngkYSqSL._AC_SL1500_.jpg" alt="Moldura Digital" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Frameo 10.1"</h3>
-            <div class="product-description">
-              Uma moldura digital simples e bonita, perfeita para partilhar memórias com a família.
-              <span class="english">A simple and beautiful digital frame, perfect for sharing memories with family.</span>
-            </div>
-            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81Xu+TvJIoL._AC_SL1500_.jpg" alt="Difusor Aromaterapia" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Aromatherapy Essential Oil Diffuser</h3>
-            <div class="product-description">
-              Um difusor de óleos essenciais calmante, perfeito para criar um ambiente relaxante e acolhedor.
-              <span class="english">A calming essential oil diffuser, perfect for creating a relaxing and welcoming environment.</span>
-            </div>
-            <a href="https://amzn.to/4s3LzM1" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71JF02e82VL._AC_SL1500_.jpg" alt="Mini Impressora" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Peripage Mini Printer</h3>
-            <div class="product-description">
-              Para imprimir fotos dos filhos, netos e momentos especiais. Um presente cheio de significado.
-              <span class="english">For printing photos of children, grandchildren, and special moments. A gift full of meaning.</span>
-            </div>
-            <a href="https://amzn.to/3PmZRJa" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- PAI / FATHER -->
-    <section id="pai" class="category-section">
-      <h2 class="category-title">Pai <span>Father</span></h2>
-      <p class="category-description">Utilidade e praticidade / Utility and practicality</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71PN0mfsuIL._AC_SL1500_.jpg" alt="Multi-ferramenta" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Bibury Multi-Tool</h3>
-            <div class="product-description">
-              Ferramenta compacta e prática, ideal para bricolage e utilidade no dia a dia.
-              <span class="english">Compact and practical tool, ideal for DIY and everyday utility.</span>
-            </div>
-            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71iUzcCmuCL._AC_SL1500_.jpg" alt="Macaco Elétrico" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Electric Car Jack 3T</h3>
-            <div class="product-description">
-              Um macaco elétrico essencial para qualquer condutor. Prático, seguro e muito útil.
-              <span class="english">An essential electric jack for any driver. Practical, safe, and very useful.</span>
-            </div>
-            <a href="https://amzn.to/4d1WQrG" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71RnXYwpLNL._AC_SL1500_.jpg" alt="Mini Projetor" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Mini Projector 4K H1</h3>
-            <div class="product-description">
-              Perfeito para ver jogos e filmes, criando momentos de convívio em família.
-              <span class="english">Perfect for watching games and movies, creating family moments.</span>
-            </div>
-            <a href="https://amzn.to/40PfYSo" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SOGROS / IN-LAWS -->
-    <section id="sogros" class="category-section">
-      <h2 class="category-title">Sogros <span>In-Laws</span></h2>
-      <p class="category-description">Presentes atenciosos / Thoughtful gifts</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81mlYfA5fpL._AC_SL1500_.jpg" alt="Moldura Digital" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Frameo 10.1"</h3>
-            <div class="product-description">
-              Uma forma moderna e simples de partilhar fotos com a família.
-              <span class="english">A modern and simple way to share photos with family.</span>
-            </div>
-            <a href="https://amzn.to/4uai6Sp" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81ESewTDlZL._AC_SL1500_.jpg" alt="Moon Lamp" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Logrotate Moon Lamp</h3>
-            <div class="product-description">
-              Uma luz decorativa elegante que cria ambiente acolhedor em qualquer divisão.
-              <span class="english">An elegant decorative light that creates a cozy atmosphere in any room.</span>
-            </div>
-            <a href="https://amzn.to/4sAgiAt" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71PN0mfsuIL._AC_SL1500_.jpg" alt="Multi-ferramenta" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Bibury Multi-Tool</h3>
-            <div class="product-description">
-              Ferramenta útil e versátil para pequenos arranjos e uso diário.
-              <span class="english">Useful and versatile tool for small fixes and daily use.</span>
-            </div>
-            <a href="https://amzn.to/4rcPKnx" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- MARIDO / HUSBAND -->
-    <section id="marido" class="category-section">
-      <h2 class="category-title">Marido <span>Husband</span></h2>
-      <p class="category-description">Tecnologia e estilo / Technology and style</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81wcSIxuA8L._AC_SL1500_.jpg" alt="Relógio Smartwatch" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Relógio Minimalista em Aço</h3>
-            <div class="product-description">
-              Um smartwatch elegante e avançado, ideal para oferecer algo premium e marcante.
-              <span class="english">An elegant and advanced smartwatch, ideal for giving something premium and memorable.</span>
-            </div>
-            <a href="https://amzn.to/3Nbilff" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71L-FrysfqL._AC_SY300_SX300_QL70_ML2_.jpg" alt="Headphones" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Auscultadores Bluetooth Over-Ear</h3>
-            <div class="product-description">
-              Confortáveis, com bom som e perfeitos para música, chamadas ou treinar. Um presente útil.
-              <span class="english">Comfortable, with great sound, perfect for music, calls, or workouts. A useful gift.</span>
-            </div>
-            <a href="https://amzn.to/3xK2p5C" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81meii4s+GL._AC_SL1500_.jpg" alt="Kit de Barba" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Kit de Barba Premium</h3>
-            <div class="product-description">
-              Conjunto completo para cuidar da barba com estilo. Para um visual sempre limpo e bem tratado.
-              <span class="english">Complete kit for stylish beard care. For a always clean and well-groomed look.</span>
-            </div>
-            <a href="https://amzn.to/40xAbvY" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ESPOSA / WIFE -->
-    <section id="esposa" class="category-section">
-      <h2 class="category-title">Esposa <span>Wife</span></h2>
-      <p class="category-description">Romance, mimo e utilidade / Romance, pampering and utility</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/71SNCgLdvpL._AC_SY500_.jpg" alt="Colar Coração" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Colar Minimalista com Coração</h3>
-            <div class="product-description">
-              Um colar delicado e elegante, perfeito para oferecer algo bonito e simbólico.
-              <span class="english">A delicate and elegant necklace, perfect for giving something beautiful and symbolic.</span>
-            </div>
-            <a href="https://amzn.to/4bf7yIN" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/61NNGzXTh3L._SL1000_.jpg" alt="Kit de Spa" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Kit de Spa com Velas e Aromas</h3>
-            <div class="product-description">
-              Conjunto para transformar qualquer noite num momento de relaxamento total.
-              <span class="english">Set to transform any night into a moment of total relaxation.</span>
-            </div>
-            <a href="https://amzn.to/3Nabbb9" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="https://m.media-amazon.com/images/I/81BzznWK58L._AC_SY500_.jpg" alt="Mala Feminina" class="product-image">
-          <div class="product-content">
-            <h3 class="product-title">Mala Feminina Casual</h3>
-            <div class="product-description">
-              Mala moderna, leve e prática para o dia a dia. Um presente útil e com estilo.
-              <span class="english">Modern, lightweight, and practical bag for everyday use. A useful and stylish gift.</span>
-            </div>
-            <a href="https://amzn.to/4upyIpg" target="_blank" rel="noopener" class="product-link">COMPRE AQUI!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="container">
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Guia de Presentes. Todos os links são afiliados.</p>
-      <p style="margin-top: 16px; font-size: 14px;">Encontra o presente ideal para todas as ocasiões.</p>
-    </div>
-  </footer>
+<div class="grid">
 
-  <script>
-    document.querySelectorAll('.nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      });
-    });
-  </script>
+<!-- PRODUTO 1 -->
+<div class="card">
+<img src="https://via.placeholder.com/400">
+<div class="title">Produto Exemplo</div>
+<div class="desc">
+Descrição em Português.<br>
+Description in English.
+</div>
+<a class="btn" href="#" target="_blank">
+VER PREÇO / SEE PRICE
+</a>
+</div>
+
+</div>
+</div>
+
 </body>
 </html>
