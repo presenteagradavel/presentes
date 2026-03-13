@@ -1,76 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Presentes para Namorada | Gift Ideas</title>
+
+<title>Presentes para a tua Namorada | Gifts for Your Girlfriend</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family: Arial, sans-serif;
+
+*{
 margin:0;
-background:#f5f5f5;
-color:#222;
+padding:0;
+box-sizing:border-box;
 }
 
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:40px 20px;
+body{
+font-family:Inter;
+background:#f7f8fb;
+color:#1f2330;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:20px;
 }
 
-.grid{
+header{
+text-align:center;
+padding:60px 20px;
+}
+
+h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:18px;
+color:#555;
+max-width:650px;
+margin:auto;
+}
+
+.section{
+margin-top:60px;
+}
+
+.section h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section p{
+color:#666;
+margin-bottom:30px;
+}
+
+.products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .card{
 background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-display:flex;
-flex-direction:column;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:.25s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
 .card img{
 width:100%;
 aspect-ratio:1/1;
 object-fit:cover;
-border-radius:8px;
+}
+
+.content{
+padding:20px;
+display:flex;
+flex-direction:column;
+height:100%;
+}
+
+.badge{
+background:#ff4d6d;
+color:white;
+font-size:12px;
+padding:6px 10px;
+border-radius:20px;
+display:inline-block;
+margin-bottom:10px;
+width:max-content;
 }
 
 .title{
-font-weight:bold;
-margin:10px 0 5px 0;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.rating{
+color:#f5a623;
+margin-bottom:10px;
+font-size:14px;
 }
 
 .desc{
 font-size:14px;
-margin-bottom:10px;
+color:#666;
+margin-bottom:20px;
+flex-grow:1;
 }
 
 .btn{
-margin-top:auto;
-background:#e91e63;
+background:#1f2330;
 color:white;
-text-align:center;
-padding:10px;
-border-radius:6px;
 text-decoration:none;
-font-weight:bold;
+padding:14px;
+text-align:center;
+border-radius:30px;
+font-weight:600;
 }
+
 .btn:hover{
-opacity:0.85;
+background:#ff4d6d;
 }
+
+footer{
+margin-top:80px;
+text-align:center;
+color:#777;
+font-size:14px;
+padding-bottom:40px;
+}
+
 </style>
 
 </head>
@@ -78,29 +151,98 @@ opacity:0.85;
 <body>
 
 <header>
-<h1>🎁 Presentes para Namorada</h1>
-<p>Romantic Gift Ideas | Ideias de Presentes Românticos</p>
+
+<div class="container">
+
+<h1>
+🎁 Presentes para a tua namorada<br>
+Gift Ideas for Your Girlfriend
+</h1>
+
+<p class="subtitle">
+Ideias de presentes românticos, criativos e acessíveis.<br>
+Romantic, creative and affordable gift ideas.
+</p>
+
+</div>
+
 </header>
 
 <div class="container">
 
-<div class="grid">
+<section class="section">
+
+<h2>
+Presentes Românticos<br>
+Romantic Gifts
+</h2>
+
+<p>
+Ideais para aniversários e ocasiões especiais.<br>
+Ideal for birthdays and special occasions.
+</p>
+
+<div class="products">
 
 <!-- PRODUTO 1 -->
 <div class="card">
-<img src="https://via.placeholder.com/400">
-<div class="title">Produto Exemplo</div>
+
+<img src="https://m.media-amazon.com/images/I/81UZP6w8GvL._AC_SX679_.jpg">
+
+<div class="content">
+
+<div class="badge">🥇 Melhor Escolha | Best Pick</div>
+
+<div class="title">Swarovski Creativity Necklace</div>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.7</div>
+
 <div class="desc">
-Descrição em Português.<br>
-Description in English.
+Colar elegante e sofisticado.<br>
+Elegant and sophisticated necklace.
 </div>
-<a class="btn" href="#" target="_blank">
-VER PREÇO / SEE PRICE
+
+<a class="btn" href="https://amzn.to/4b5aMyt" target="_blank">
+VER PREÇO | CHECK PRICE
 </a>
-</div>
 
 </div>
 </div>
+
+<!-- PRODUTO 2 -->
+<div class="card">
+
+<img src="https://m.media-amazon.com/images/I/81hHkMheJtL._AC_SY575_.jpg">
+
+<div class="content">
+
+<div class="badge">💎 Popular | Popular</div>
+
+<div class="title">Elli 925 Silver Necklace</div>
+
+<div class="rating">⭐⭐⭐⭐☆ 4.5</div>
+
+<div class="desc">
+Colar em prata 925 muito procurado.<br>
+925 silver necklace highly popular.
+</div>
+
+<a class="btn" href="https://amzn.to/47umXnr" target="_blank">
+VER PREÇO | CHECK PRICE
+</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+© 2026 Gift Guide
+</footer>
 
 </body>
 </html>
